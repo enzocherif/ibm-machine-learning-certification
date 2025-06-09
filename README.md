@@ -60,5 +60,25 @@ This repository is the single point of truth for **all** the notebooks, labs, an
 > 📌 **TL;DR** – If you want to gauge my hands-on ML ability, just browse the notebooks or click “Open in Colab” to run them live. Feedback and collaboration are welcome!
 
 
+
 <a id="structure"></a>
-### 2 · Folder Structure
+### 📂 Folder Structure
+
+```text
+ibm-machine-learning-certification/
+├── notebooks/          # 100 % of certification labs & mini-projects (~30 min each)
+│   ├── 01_simple-linear-regression.ipynb
+│   ├── 02_logistic-regression.ipynb
+│   ├── ... (ordre chronologique)
+│   └── capstone_project.ipynb
+├── utils/              # Helper scripts (e.g. catalogue generator)
+├── data/               # Small sample datasets (<100 MB, licence-friendly) – optional
+├── env/                # requirements.txt or environment.yml
+├── .gitignore          # Ignore checkpoints, virtualenv, etc.
+└── README.md
+```
+
+> **Why keep almost everything in `notebooks/` ?**  
+> IBM’s hands-on tasks are intentionally short and self-contained; grouping them here avoids over-nesting while chronological prefixes (`01_`, `02_`, …) preserve order. Larger case studies stay in the same folder with a suffix like `_project.ipynb` for easy discovery.
+
+
